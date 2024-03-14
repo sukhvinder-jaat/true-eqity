@@ -19,12 +19,17 @@ const Hero = () => {
           <p className=" uppercase bg_text_image bg-clip-text bg-true font-bold font-inter xl:text-26xl lg:text-[200px] md:text-[160px] md:text-start text-center  sm:text-[99px] text-[70px] text-transparent bg-no-repeat bg-center leading-[96%]">
             FUND
           </p>
-          <Link href="#ocean" className=" mt-4 md:block hidden">
+          <Link
+            href="#ocean"
+            aria-label="Visit Ocean Section"
+            className=" mt-4 md:block hidden"
+          >
             <HeroArrow />
           </Link>
         </div>
         <Link
           href="#ocean"
+          aria-label="Jump to Ocean Section"
           className=" mt-4 md:hidden text-center flex justify-center absolute bottom-[20px] w-full end-[-3%]"
         >
           <HeroArrow />

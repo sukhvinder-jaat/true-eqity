@@ -18,6 +18,8 @@ const Ocean = () => {
         <div className=" lg:w-6/12 w-full flex items-center justify-center">
           <div className=" overflow-hidden max-w-[664px]">
             <Image
+              loading="lazy"
+              sizes="100vw"
               src="/assets/images/ocean/ocean_home.webp"
               width={664}
               height={854}
@@ -30,6 +32,8 @@ const Ocean = () => {
       <div className="max-w-[883px] px-0 mx-auto flex lg:flex-col flex-col-reverse items-center lg:mt-[-70px] lg:mb-[205px]">
         <div className="max-w-[664px] overflow-hidden relative z-10">
           <Image
+            loading="lazy"
+            sizes="100vw"
             src="/assets/images/ocean/home.webp"
             width={664}
             height={854}

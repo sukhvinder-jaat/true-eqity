@@ -22,6 +22,8 @@ const SideBar = ({ children }) => {
     <div className="md:pt-16 pt-[31px] max-w-[1377px] w-full mx-auto xl:px-0 px-[22px] flex-grow-0">
       <div className="flex md:justify-end justify-between md:items-start items-center">
         <Image
+          loading="lazy"
+          sizes="100vw"
           src="/assets/images/nav/logo.png"
           alt="logo"
           width={136}
@@ -47,6 +49,7 @@ const SideBar = ({ children }) => {
               {/* Your sidebar content goes here */}
               <button
                 onClick={closeSidebar}
+                aria-label="close Sidebar"
                 className="absolute top-3 left-3 text-tia-maria"
               >
                 <RxCross2 className="w-[43px] h-[43px]" />
@@ -79,6 +82,7 @@ const SideBar = ({ children }) => {
 
           {/* Toggle button */}
           <button
+            aria-label="Open Sidebar"
             className=" text-tia-maria relative z-10"
             onClick={openSidebar}
           >

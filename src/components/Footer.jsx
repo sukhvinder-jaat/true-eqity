@@ -27,6 +27,7 @@ const Footer = () => {
                       key={i}
                     >
                       <Link
+                        aria-label={option.href}
                         className="transition-all ease-in-out duration-300 hover:opacity-70"
                         href={option.href}
                       >
@@ -49,6 +50,7 @@ const Footer = () => {
           return (
             <Link
               key={i}
+              aria-label={link.href}
               className="transition-all ease-in-out duration-300 hover:opacity-70"
               href={link.href}
             >

@@ -8,9 +8,30 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        true: "url('/assets/images/background/true.webp')",
+        shortTime: "url('/assets/images/background/short_time.webp')",
+        seed: "url('/assets/images/background/seed.webp')",
+        book: "url('/assets/images/immobilion/book.webp')",
+        mountain: "url('/assets/images/immobilion/mountain.webp')",
+        blueHome: "url('/assets/images/immobilion/blue_home.webp')",
+        whiteHome: "url('/assets/images/immobilion/white_home.webp')",
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        sfPro: ["sf-Pro", "sans-serif"],
+      },
+      fontSize: {
+        base: "16px",
+        md: "17px",
+        lg: "34px",
+        xl: "40px",
+        "3xl": "87px",
+        "9xl": "128px",
+        "26xl": "260px",
+      },
+      colors: {
+        darkBlack: "#171717",
+        lightBlack: "#171818",
       },
     },
   },

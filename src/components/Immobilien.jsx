@@ -16,7 +16,7 @@ const Immobilien = () => {
               }`}
             >
               <div
-                className={`min-h-[854px] bg-center bg-no-repeat bg-cover xl:pb-[92px] lg:pb-20 pb-10 lg:px-[32px] px-5 flex flex-col justify-end ${data.background} `}
+                className={`md:min-h-[854px] min-h-[821px] bg-center bg-no-repeat bg-cover xl:pb-[92px] lg:pb-20 pb-10 lg:px-[32px] px-5 flex flex-col justify-end ${data.background} `}
               >
                 <p className="xl:text-3xl md:text-[70px] sm:text-[60px] text-[50px]  leading-[120%] text-white font-inter font-bold max-w-[543px]">
                   Immobilien, Short

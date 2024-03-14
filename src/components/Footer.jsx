@@ -5,7 +5,7 @@ import { footerLinks, footerTerm } from "./common/Helper";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="mt-[64px] mb-[46px] max-w-[1377px] mx-auto xl:px-0 px-[35px]">
+    <div className="md:mt-[104px] sm:mt-20 mt-[31px] mb-[46px] max-w-[1377px] mx-auto xl:px-0 px-[35px]">
       <div className=" flex flex-wrap mb-[64px]">
         {footerLinks.map((link, index) => {
           return (

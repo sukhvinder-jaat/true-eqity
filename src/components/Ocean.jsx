@@ -13,7 +13,7 @@ const Ocean = () => {
         {" "}
         {/* Flex container for content */}
         {/* Left column with text and button */}
-        <div className=" lg:w-6/12 w-full xl:pe-[64px] lg:pe-10 lg:mb-0 mb-[58px] lg:px-0 px-[32px]">
+        <div className=" lg:w-6/12 w-full xl:pe-[42px] lg:pe-10 lg:mb-0 mb-[58px]">
           <p className=" text-black font-inter font-black xl:text-3xl md:text-[70px] sm:text-[60px] small:text-[52px] text-[40px] leading-[120%] mb-[34px]">
             Lorem ipsum dolor sit amet consetetur
           </p>
@@ -51,7 +51,7 @@ const Ocean = () => {
           />
         </div>
         {/* Text and button */}
-        <div className=" w-full lg:max-w-[630px] lg:px-0 px-[32px] lg:mt-[86px] md:mt-10 mt-[30px] lg:mb-0 mb-[59px]">
+        <div className=" w-full lg:max-w-[710px] lg:mt-[86px] md:mt-10 mt-[30px] lg:mb-0 mb-[59px]">
           <p className=" text-black font-inter font-black xl:text-3xl md:text-[70px] sm:text-[60px] small:text-[52px] text-[40px] leading-[120%] mb-[34px]">
             Lorem ipsum dolor sit amet,
           </p>

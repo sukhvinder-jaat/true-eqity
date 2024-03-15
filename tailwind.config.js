@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        small: "430px",
+      },
       backgroundImage: {
         true: "url('/assets/images/background/true.webp')",
         shortTime: "url('/assets/images/background/short_time.webp')",

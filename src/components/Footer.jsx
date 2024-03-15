@@ -1,6 +1,7 @@
 import Link from "next/link"; // Importing Link component from next/link
 import React from "react"; // Importing React library
 import { footerLinks, footerTerm } from "./common/Helper"; // Importing footerLinks and footerTerm from Helper module
+import { DemoArrow } from "./common/Icon";
 
 const Footer = () => {
   // Defining Footer functional component
@@ -15,14 +16,14 @@ const Footer = () => {
         {/* Mapping through footerLinks data */}
         {footerLinks.map((link, index) => {
           return (
-            <div className="md:w-3/12 sm:w-6/12 w-full" key={index}>
+            <div className="md:w-3/12 small:w-6/12 w-full" key={index}>
               {" "}
               {/* Div for each column of links */}
               <ul
-                className={`gap-6 flex-col flex ${
+                className={`gap-6 flex-col flex items-start ${
                   link.label === "Support" && "md:mt-0 mt-[60px]" // Adding margin top based on label
                 } ${link.label === "Company" && "md:mt-0 mt-[60px]"} ${
-                  link.label === "Categories" && "sm:flex hidden" // Showing categories only on smaller screens
+                  link.label === "Resources" && "small:mt-0 mt-[60px]" // Showing categories only on smaller screens
                 }`}
               >
                 <li className=" text-md font-sfPro text-darkBlack font-semibold">
@@ -37,10 +38,15 @@ const Footer = () => {
                     >
                       <Link
                         aria-label={option.href}
-                        className="transition-all ease-in-out duration-300 hover:opacity-70"
+                        className="transition-all ease-in-out duration-300 hover:opacity-70 flex items-center gap-2 group"
                         href={option.href}
                       >
-                        {option.link} {/* Rendering link */}
+                        {option.link}
+                        {option.link === "Request Demo" && (
+                          <span className=" md:hidden group-hover:translate-x-3 transition-all ease-linear duration-300">
+                            <DemoArrow />
+                          </span>
+                        )}
                       </Link>
                     </li>
                   );

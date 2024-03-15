@@ -4,7 +4,7 @@ export const SideBarClose = () => {
     <svg
       width="73"
       height="59"
-      className="sm:max-h-[59px] max-h-[36px] sm:max-w-[72px] max-w-[44px]"
+      className="sm:max-h-[59px] max-h-[36px] sm:max-w-[72px] max-w-[44px] group"
       viewBox="0 0 73 59"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -13,6 +13,7 @@ export const SideBarClose = () => {
         x="72.2847"
         y="59"
         width="50.3769"
+        className=" group-hover:w-full transition-all ease-in-out duration-300"
         height="14.9769"
         transform="rotate(-180 72.2847 59)"
         fill="black"
@@ -28,6 +29,7 @@ export const SideBarClose = () => {
       <rect
         x="72.2847"
         y="14.9769"
+        className=" group-hover:w-full transition-all ease-in-out duration-300"
         width="50.3769"
         height="14.9769"
         transform="rotate(-180 72.2847 14.9769)"
@@ -69,6 +71,7 @@ export const SeedIcon = () => {
         x="0.371338"
         y="92.1616"
         width="64.0385"
+        className=" group-hover:w-full transition-all ease-in-out duration-300 "
         height="18.9147"
         transform="rotate(-90 0.371338 92.1616)"
         fill="white"
@@ -87,7 +90,27 @@ export const SeedIcon = () => {
         width="64.0385"
         height="18.9147"
         transform="rotate(-90 55.969 92.1616)"
+        className=" group-hover:w-full transition-all ease-in-out duration-300 "
         fill="white"
+      />
+    </svg>
+  );
+};
+// demo arrow
+export const DemoArrow = () => {
+  return (
+    <svg
+      width="18"
+      height="16"
+      viewBox="0 0 18 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M10.358 0.454505C9.91866 0.015165 9.20634 0.015165 8.767 0.454505C8.32766 0.893845 8.32766 1.60616 8.767 2.0455L13.5965 6.875H1.6875C1.06618 6.875 0.5625 7.37868 0.5625 8C0.5625 8.62132 1.06618 9.125 1.6875 9.125H13.5965L8.767 13.9545C8.32766 14.3938 8.32766 15.1062 8.767 15.5455C9.20634 15.9848 9.91866 15.9848 10.358 15.5455L17.108 8.7955C17.5473 8.35616 17.5473 7.64385 17.108 7.2045L10.358 0.454505Z"
+        fill="black"
       />
     </svg>
   );

@@ -10,16 +10,16 @@ const Hero = () => {
       <SideBar /> {/* Rendering SideBar component */}
       <div className="max-w-[1377px] mx-auto xl:px-1 px-[22px] w-full translate-y-[-20px] flex-grow-[1] flex flex-col justify-center">
         {/* Render TRUE */}
-        <p className=" uppercase bg_text_image bg-clip-text bg-true font-black font-inter xl:text-26xl lg:text-[200px] md:text-[160px] md:text-start text-center  sm:text-[99px] text-[70px] text-transparent bg-no-repeat bg-center leading-[96%]">
+        <p className=" uppercase bg_text_image bg-clip-text bg-true font-black font-inter xl:text-26xl lg:text-[200px] md:text-[160px] md:text-start text-center  sm:text-[99px] small:text-[90px] text-[70px] text-transparent bg-no-repeat bg-center leading-[96%]">
           TRUE
         </p>
         {/* Render EQUITY */}
-        <p className=" uppercase bg_text_image bg-clip-text bg-true font-black font-inter xl:text-26xl lg:text-[200px] md:text-[160px] md:text-start text-center  sm:text-[99px] text-[70px] text-transparent bg-no-repeat bg-center leading-[96%]">
+        <p className=" uppercase bg_text_image bg-clip-text bg-true font-black font-inter xl:text-26xl lg:text-[200px] md:text-[160px] md:text-start text-center  sm:text-[99px] small:text-[90px] text-[70px] text-transparent bg-no-repeat bg-center leading-[96%]">
           EQUITY
         </p>
         <div className=" flex items-center md:justify-between justify-center">
           {/* Render FUND */}
-          <p className=" uppercase bg_text_image bg-clip-text bg-true font-black font-inter xl:text-26xl lg:text-[200px] md:text-[160px] md:text-start text-center  sm:text-[99px] text-[70px] text-transparent bg-no-repeat bg-center leading-[96%]">
+          <p className=" uppercase bg_text_image bg-clip-text bg-true font-black font-inter xl:text-26xl lg:text-[200px] md:text-[160px] md:text-start text-center  sm:text-[99px] small:text-[90px] text-[70px] text-transparent bg-no-repeat bg-center leading-[96%]">
             FUND
           </p>
           {/* Render HeroArrow with Link to Ocean Section */}

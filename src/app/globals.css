@@ -14,20 +14,11 @@
   -webkit-background-clip: text;
   background-size: 100% 100%;
 }
-@media (max-width: 430px) {
-  .text_40 {
-    font-size: 40px !important;
-  }
-}
 /* ===================================== PRELOADER ===================================== */
 
 .not-scroll-before-loading {
   overflow: hidden;
   height: 100vh;
-}
-
-.loading-img {
-  min-height: 100vh;
 }
 /* PRELOADER ANIMATIONS CSS */
 @-webkit-keyframes follow-the-leader {
@@ -149,7 +140,10 @@
     transform: scale(1);
   }
 }
-
-.contact-error-line {
-  bottom: -16px;
+/* sidebar */
+.sidebar_close {
+  clip-path: circle(0px at calc(100% - 45px) 45px);
+}
+.side_bar_show {
+  clip-path: circle(75%);
 }

@@ -21,15 +21,18 @@ const SideBar = ({ children }) => {
   return (
     <div className="md:pt-16 pt-[31px] max-w-[1377px] w-full mx-auto xl:px-1 px-[22px] flex-grow-0">
       <div className="flex md:justify-end justify-between md:items-start items-center">
-        <Image
-          loading="lazy"
-          sizes="100vw"
-          src="/assets/images/nav/logo.png"
-          alt="logo"
-          width={136}
-          height={58}
-          className=" md:hidden"
-        />
+        <Link href="#" className=" group">
+          <Image
+            loading="lazy"
+            sizes="100vw"
+            src="/assets/images/nav/logo.png"
+            alt="logo"
+            width={136}
+            height={58}
+            className=" md:hidden transition-all ease-in-out duration-300 group-hover:scale-90"
+          />
+        </Link>
+
         <div className="relative flex">
           {/* Overlay */}
           {isSidebarOpen && (
@@ -41,8 +44,10 @@ const SideBar = ({ children }) => {
 
           {/* Sidebar */}
           <div
-            className={`sidebar bg-white end-0 fixed top-0 w-full sm:max-w-[400px] h-full transition-transform transform z-50 ${
-              isSidebarOpen ? "translate-x-0" : "-translate-x-[-100%]"
+            className={`sidebar bg-white end-0 fixed top-0 w-full sm:max-w-[400px] h-full transition-all ease-linear duration-500 transform z-50 ${
+              isSidebarOpen
+                ? "translate-x-0 translate-y-0 side_bar_show"
+                : "translate-x-[100%] translate-y-[-100%] sidebar_close"
             }`}
           >
             <div className="min-h-screen flex flex-col justify-center items-center">

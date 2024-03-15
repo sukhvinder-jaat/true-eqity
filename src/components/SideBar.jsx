@@ -5,7 +5,7 @@ import Link from "next/link";
 import { sidebarLink } from "./common/Helper";
 import { SideBarClose } from "./common/Icon";
 import Image from "next/image";
-const SideBar = ({ children }) => {
+const SideBar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const openSidebar = () => {
@@ -81,9 +81,6 @@ const SideBar = ({ children }) => {
               </ul>
             </div>
           </div>
-
-          {/* Main content */}
-          <div className="flex-1">{children}</div>
 
           {/* Toggle button */}
           <button

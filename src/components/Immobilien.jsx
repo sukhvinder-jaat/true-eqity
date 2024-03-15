@@ -1,10 +1,15 @@
-import React from "react";
-import { immobilienCard } from "./common/Helper";
+import React from "react"; // Importing React library
+import { immobilienCard } from "./common/Helper"; // Importing immobilienCard data from Helper module
 
 const Immobilien = () => {
+  // Defining Immobilien functional component
   return (
     <div className="max-w-[1377px] mx-auto xl:mb-[50px]" id="short">
+      {/* Container for Immobilien section */}
       <div className="flex flex-wrap xl:gap-y-[50px] lg:gap-y-6">
+        {" "}
+        {/* Flex container for cards */}
+        {/* Mapping through immobilienCard data */}
         {immobilienCard.map((data, index) => {
           return (
             <div
@@ -18,6 +23,7 @@ const Immobilien = () => {
               <div
                 className={`md:min-h-[854px] min-h-[821px] bg-center bg-no-repeat bg-cover xl:pb-[92px] lg:pb-20 pb-10 lg:px-[32px] px-5 flex flex-col justify-end ${data.background} `}
               >
+                {/* Card content */}
                 <p className="xl:text-3xl md:text-[70px] sm:text-[60px] text-[50px]  leading-[120%] text-white font-inter font-bold max-w-[543px]">
                   Immobilien, Short
                 </p>
@@ -30,4 +36,4 @@ const Immobilien = () => {
   );
 };
 
-export default Immobilien;
+export default Immobilien; // Exporting Immobilien component

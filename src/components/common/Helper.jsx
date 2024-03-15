@@ -1,24 +1,27 @@
-// nav links
+// Navigation links for sidebar
 export const sidebarLink = [
   { title: "Help Center", path: "#ocean" },
   { title: "Blog", path: "#shortTime" },
   { title: "Tutorials ", path: "#preSeed" },
   { title: "FAQs", path: "#short" },
 ];
-// immobilien Card
+
+// Data for immobilien card backgrounds
 export const immobilienCard = [
   { background: "bg-book" },
   { background: "bg-mountain" },
   { background: "bg-blueHome" },
   { background: "bg-whiteHome" },
 ];
-// footer Term
+
+// Footer terms and their corresponding links
 export const footerTerm = [
   { href: "#ocean", content: "Term" },
   { href: "#shortTime", content: "Privacy" },
   { href: "#preSeed", content: "Contact" },
 ];
-// footer Links
+
+// Footer links categorized by label
 export const footerLinks = [
   {
     label: "Categories",

@@ -47,12 +47,6 @@
   }
 }
 
-.follow-the-leader {
-  width: 14px;
-  height: 14px;
-  position: relative;
-}
-
 .follow-the-leader div {
   -webkit-animation: follow-the-leader 1.875s infinite backwards;
   animation: follow-the-leader 1.875s infinite backwards;
@@ -139,11 +133,4 @@
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-}
-/* sidebar */
-.sidebar_close {
-  clip-path: circle(0px at calc(100% - 45px) 45px);
-}
-.side_bar_show {
-  clip-path: circle(75%);
 }

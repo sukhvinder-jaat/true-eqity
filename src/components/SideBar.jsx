@@ -44,10 +44,10 @@ const SideBar = ({ children }) => {
 
           {/* Sidebar */}
           <div
-            className={`sidebar bg-white end-0 fixed top-0 w-full sm:max-w-[400px] h-full transition-all ease-linear duration-500 transform z-50 ${
+            className={`sidebar w-0 h-0 opacity-0 bg-white end-0 fixed top-0 sm:max-w-[400px] transition-all ease-linear duration-500 transform -z-10 ${
               isSidebarOpen
-                ? "translate-x-0 translate-y-0 side_bar_show"
-                : "translate-x-[100%] translate-y-[-100%] sidebar_close"
+                ? "translate-x-0 translate-y-0 !w-full !h-full !opacity-100 !z-50"
+                : "translate-x-[100%] translate-y-[-100%]"
             }`}
           >
             <div className="min-h-screen flex flex-col justify-center items-center">
@@ -57,7 +57,7 @@ const SideBar = ({ children }) => {
                 aria-label="close Sidebar"
                 className="absolute top-3 left-3 text-tia-maria"
               >
-                <RxCross2 className="w-[43px] h-[43px]" />
+                <RxCross2 className="w-[43px] h-[43px] hover:scale-90 transition-all ease-in-out duration-300" />
               </button>
               <ul className="flex flex-col gap-5">
                 {sidebarLink.map((value, index) => {

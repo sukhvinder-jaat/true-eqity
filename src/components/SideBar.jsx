@@ -44,10 +44,8 @@ const SideBar = () => {
 
           {/* Sidebar */}
           <div
-            className={`sidebar w-0 h-0 opacity-0 bg-white end-0 fixed top-0 sm:max-w-[400px] transition-all ease-linear duration-500 transform -z-10 ${
-              isSidebarOpen
-                ? "translate-x-0 translate-y-0 !w-full !h-full !opacity-100 !z-50"
-                : "translate-x-[100%] translate-y-[-100%]"
+            className={`sidebar nav_show opacity-0 bg-transparent -z-10 end-0 fixed top-0 sm:max-w-[400px] transition-all ease-linear duration-500 transform ${
+              isSidebarOpen ? " !opacity-100 show !z-20 !bg-white !w-full" : " "
             }`}
           >
             <div className="min-h-screen flex flex-col justify-center items-center">

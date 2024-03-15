@@ -134,3 +134,10 @@
     transform: scale(1);
   }
 }
+/* sidebar */
+.nav_show {
+  clip-path: circle(0px at calc(100% - 45px) 45px);
+}
+.show {
+  clip-path: circle(75%);
+}

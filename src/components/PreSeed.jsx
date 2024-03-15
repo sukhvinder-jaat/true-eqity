@@ -8,7 +8,7 @@ const PreSeed = () => {
       id="preSeed"
     >
       <div className=" lg:px-0 px-[23px] lg:pt-0 pt-[74px]">
-        <p className=" max-w-[1000px] lg:mb-[65px] mb-5 xl:text-3xl md:text-[70px] sm:text-[60px] text-[52px]  leading-[120%] text-white font-inter font-black">
+        <p className=" max-w-[1000px] lg:mb-[65px] mb-5 xl:text-3xl md:text-[70px] sm:text-[60px] text-[52px] text_40 leading-[120%] text-white font-inter font-black">
           Pre Seed Finanzierung für schweizer Startups
         </p>
 

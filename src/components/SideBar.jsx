@@ -19,7 +19,7 @@ const SideBar = ({ children }) => {
   };
 
   return (
-    <div className="md:pt-16 pt-[31px] max-w-[1377px] w-full mx-auto xl:px-0 px-[22px] flex-grow-0">
+    <div className="md:pt-16 pt-[31px] max-w-[1377px] w-full mx-auto xl:px-1 px-[22px] flex-grow-0">
       <div className="flex md:justify-end justify-between md:items-start items-center">
         <Image
           loading="lazy"
@@ -34,7 +34,7 @@ const SideBar = ({ children }) => {
           {/* Overlay */}
           {isSidebarOpen && (
             <div
-              className="fixed inset-0 bg-black opacity-50"
+              className="fixed inset-0 bg-black opacity-70 z-10"
               onClick={closeSidebar}
             ></div>
           )}

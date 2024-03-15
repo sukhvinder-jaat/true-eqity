@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className=" md:min-h-[80vh] min-h-screen flex flex-col relative overflow-hidden">
       <SideBar />
-      <div className="max-w-[1377px] mx-auto xl:px-0 px-[22px] w-full translate-y-[-20px] flex-grow-[1] flex flex-col justify-center">
+      <div className="max-w-[1377px] mx-auto xl:px-1 px-[22px] w-full translate-y-[-20px] flex-grow-[1] flex flex-col justify-center">
         <p className=" uppercase bg_text_image bg-clip-text bg-true font-black font-inter xl:text-26xl lg:text-[200px] md:text-[160px] md:text-start text-center  sm:text-[99px] text-[70px] text-transparent bg-no-repeat bg-center leading-[96%]">
           TRUE
         </p>

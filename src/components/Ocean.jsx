@@ -5,12 +5,12 @@ import BlackButton from "./common/BlackButton";
 const Ocean = () => {
   return (
     <div
-      className=" mt-[33px] max-w-[1377px] mx-auto xl:px-0 lg:px-[22px]"
+      className=" mt-[33px] max-w-[1377px] mx-auto xl:px-1 lg:px-[22px]"
       id="ocean"
     >
       <div className=" flex flex-wrap items-center lg:px-0 md:px-[32px]">
         <div className=" lg:w-6/12 w-full xl:pe-[64px] lg:pe-10 lg:mb-0 mb-[58px] lg:px-0 px-[32px]">
-          <p className=" text-black font-inter font-black xl:text-3xl md:text-[70px] sm:text-[60px] text-[52px]  leading-[120%] mb-[34px]">
+          <p className=" text-black font-inter font-black xl:text-3xl md:text-[70px] sm:text-[60px] text-[52px] text_40 leading-[120%] mb-[34px]">
             Lorem ipsum dolor sit amet consetetur
           </p>
           <BlackButton content="Jetzt buchen" />
@@ -29,7 +29,7 @@ const Ocean = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[883px] px-0 mx-auto flex lg:flex-col flex-col-reverse items-center lg:mt-[-85px] lg:mb-[205px]">
+      <div className="max-w-[883px] px-0 mx-auto flex lg:flex-col flex-col-reverse items-center xl:mt-[-85px] lg:mt-[-60px] lg:mb-[205px]">
         <div className="max-w-[883px] overflow-hidden relative z-10">
           <Image
             loading="lazy"
@@ -42,7 +42,7 @@ const Ocean = () => {
           />
         </div>
         <div className=" w-full lg:max-w-[630px] lg:px-0 px-[32px] lg:mt-[86px] md:mt-10 mt-[30px] lg:mb-0 mb-[59px]">
-          <p className=" text-black font-inter font-black xl:text-3xl md:text-[70px] sm:text-[60px] text-[52px]  leading-[120%] mb-[34px]">
+          <p className=" text-black font-inter font-black xl:text-3xl md:text-[70px] sm:text-[60px] text-[52px] text_40 leading-[120%] mb-[34px]">
             Lorem ipsum dolor sit amet,
           </p>
           <BlackButton content="Jetzt buchen" />

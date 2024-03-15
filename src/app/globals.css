@@ -135,9 +135,15 @@
   }
 }
 /* sidebar */
+/* .nav_show {
+  clip-path: circle(0px at calc(100% - 105px) 105px);
+}
+.show {
+  clip-path: circle(85%);
+} */
 .nav_show {
   clip-path: circle(0px at calc(100% - 45px) 45px);
 }
-.show {
+.nav_show.show {
   clip-path: circle(75%);
 }

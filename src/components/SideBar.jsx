@@ -44,8 +44,8 @@ const SideBar = () => {
 
           {/* Sidebar */}
           <div
-            className={`sidebar nav_show opacity-0 bg-transparent -z-10 end-0 fixed top-0 sm:max-w-[400px] transition-all ease-linear duration-500 transform ${
-              isSidebarOpen ? " !opacity-100 show !z-20 !bg-white !w-full" : " "
+            className={`fixed opacity-0 bg-transparent end-0 w-full -z-10 top-0 sm:max-w-[400px] transition-all ease-in-out duration-1000 transform  nav_show ${
+              isSidebarOpen ? "show !z-20 !opacity-100 !bg-black" : ""
             }`}
           >
             <div className="min-h-screen flex flex-col justify-center items-center">
@@ -55,7 +55,7 @@ const SideBar = () => {
                 aria-label="close Sidebar"
                 className="absolute top-3 left-3 text-tia-maria"
               >
-                <RxCross2 className="w-[43px] h-[43px] hover:scale-90 transition-all ease-in-out duration-300" />
+                <RxCross2 className="w-[43px] h-[43px] text-white hover:scale-90 transition-all ease-in-out duration-300" />
               </button>
               <ul className="flex flex-col gap-5">
                 {sidebarLink.map((value, index) => {
@@ -67,7 +67,7 @@ const SideBar = () => {
                     >
                       <Link
                         aria-label={value.title}
-                        className="font-inter font-medium text-xl transition-all ease-in-out duration-300 hover:opacity-70"
+                        className="font-inter font-medium text-xl transition-all ease-in-out duration-300 text-white hover:opacity-70"
                         key={index}
                         href={value.path}
                       >
